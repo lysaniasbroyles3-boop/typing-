@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Bot | AI Infinite Typing Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <span class="bot-icon">🤖</span>
+        <h1>Typing Bot</h1>
+      </div>
+      <p class="subtitle">AI-generated infinite text stream</p>
+    </header>
+
+    <div class="stats-bar">
+      <div class="stat-box">
+        <span class="stat-label">WPM</span>
+        <span id="wpm" class="stat-value">0</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Accuracy</span>
+        <span id="accuracy" class="stat-value">100%</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Words Typed</span>
+        <span id="word-count" class="stat-value">0</span>
+      </div>
+    </div>
+
+    <main class="typing-area" id="typing-area" tabindex="0">
+      <div class="ai-badge" id="ai-status">AI Stream: Ready</div>
+      <div class="text-display" id="text-display"></div>
+      <div class="focus-overlay" id="focus-overlay">Click here or start typing to activate Typing Bot</div>
+    </main>
+
+    <div class="controls">
+      <button id="restart-btn">↻ Reset & Generate New Stream</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
